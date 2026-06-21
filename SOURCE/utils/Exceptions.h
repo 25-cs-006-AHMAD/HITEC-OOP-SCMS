@@ -10,15 +10,4 @@ public:
     }
 };
 
-class OverdueException {
-private:
-    double fine;
-public:
-    OverdueException(double f) : fine(f) {}
-    void showError() const {
-        cout << "Error: Overdue item!" << endl;
-        cout << "Fine Amount: Rs. " << fine << endl;
-    }
-    double getFine() const { return fine; }
-};
-#endif
+
